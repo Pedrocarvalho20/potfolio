@@ -179,11 +179,6 @@ span{
     margin: 0.5rem;
     letter-spacing: 0.1rem;
     /* N lines...*/
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .portfolio{
@@ -346,7 +341,9 @@ footer{
     color: var(--main-color);
 }
 /* button */
-
+.more-text{
+    display: none;
+}
 /* menu-hamburguer */
 .menu-hamburguer{
     display: none;
@@ -413,9 +410,9 @@ footer{
     text-align: center;
  }
  .home-content h1, .about-content h1{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
  }
  .services-container{
     flex-direction: column;
@@ -425,8 +422,8 @@ footer{
     width: 100%;
  }
  .portfolio-layer p{
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-size: 0.5rem;
+    font-weight: 800;
 
  }
 }

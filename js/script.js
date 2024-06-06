@@ -28,3 +28,21 @@ document.getElementById('read-more-btn').addEventListener('click', function(even
         readMoreBtn.textContent = 'Read More';
     }
 });
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const serviceBox = btn.closest('.services-box');
+        const shortText = serviceBox.querySelector('.short-text');
+        const moreText = serviceBox.querySelector('.more-text');
+
+        if (moreText.style.display === 'none') {
+            moreText.style.display = 'block';
+            shortText.style.display = 'none';
+            btn.textContent = 'Read Less';
+        } else {
+            moreText.style.display = 'none';
+            shortText.style.display = 'block';
+            btn.textContent = 'Read More';
+        }
+    });
+});
