@@ -444,7 +444,7 @@ footer{
      }
 
      .portfolio-container{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
      }
      .portfolio-layer p{
         font-size: 0.5rem;
@@ -487,6 +487,6 @@ footer{
         font-size: 2rem;
     }
     .portfolio-container{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
      }
 }
